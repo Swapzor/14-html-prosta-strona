@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 5px;
+          text-align: left;
+        }
+        #przycisk{
+            color: red;
+            background-color: blue;
+            width: 80px;
+            height: 50px;
+
+        }
+        #wiadomosc{
+            width: 300px;
+            height: 100px;
+        }
+        </style>
+    <h1>Marcin Kacki</h1>
+    <table style="width:25%">
+        <tr>
+          Dane kontaktowe
+        </tr>
+        <tr>
+          <td>Imie i nazwisko</td>
+          <td>Numer telefonu</td>
+          <td>Email</td>
+        </tr>
+        <tr>
+          <td>Marcin Kacki</td>
+          <td>123456789</td>
+          <td><a href="123456@gmail.com">123456@gmail.com</a></td>
+        </tr>
+      </table>
+      <form action="/action_page.php">
+        <label for="imie">Imie:</label><br>
+        <input type="text" id="imie" name="imie" value="" required><br>
+        <label for="temat">Temat:</label><br>
+        <input type="text" id="temat" name="temat" value="" required><br>
+        <label for="wiadomosc">Wiadomosc:</label><br>
+        <input type="text" id="wiadomosc" name="wiadomosc" value="" required ><br>
+        <input id="przycisk" type="submit" value="Wyslij">
+      </form> 
+</html>
